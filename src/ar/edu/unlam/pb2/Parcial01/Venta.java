@@ -11,12 +11,18 @@ public class Venta {
 
 	public Venta(String codigo, Cliente cliente, Vendedor vendedor) {
 		// TODO: Completar el constructor para el correcto funcionamiento del software
+		this.setCodigo(codigo);
+		this.setCliente(cliente);
+		this.setVendedor(vendedor);
+		this.setRenglones(renglones);
 	}
 	
-	// TODO: Completar con los getters y setters necesarios
+	
+	
 
 	public void agregarRenglon(Vendible vendible, Integer cantidad) {
 		// TODO: Agregar el vendible a la venta 
+		
 	}
 	
 	@Override
@@ -25,4 +31,42 @@ public class Venta {
 		return "Venta: " + codigo + "\n" + "Cliente" + cliente + "\n" + "Vendedor" + vendedor + "\n";
 	}
 
+	
+	
+	
+	// TODO: Completar con los getters y setters necesarios
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public Vendedor getVendedor() {
+		return vendedor;
+	}
+
+	public void setVendedor(Vendedor vendedor) {
+		this.vendedor = vendedor;
+	}
+
+	public Map<Vendible, Integer> getRenglones() {
+		return renglones;
+	}
+
+	public void setRenglones(Map<Vendible, Integer> renglones) {
+		this.renglones = renglones;
+	}
+
+	
+	
 }

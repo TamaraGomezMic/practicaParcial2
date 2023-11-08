@@ -36,13 +36,80 @@ public class Tienda {
 	private List<Cliente> clientes;
 	private Set<Venta> ventas;
 	private Set<Vendedor> vendedores;
-
-	public Tienda(String cuit, String nombre) {
-
-		// TODO: Completar el constructor para el correcto funcionamiento del software
+	
+	
+	// TODO: Completar con los getters y setters necesarios
+	public String getCuit() {
+		return cuit;
 	}
 
-	// TODO: Completar con los getters y setters necesarios
+	public void setCuit(String cuit) {
+		this.cuit = cuit;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Set<Vendible> getVendibles() {
+		return vendibles;
+	}
+
+	public void setVendibles(Set<Vendible> vendibles) {
+		this.vendibles = vendibles;
+	}
+
+	public Map<Producto, Integer> getStock() {
+		return stock;
+	}
+
+	public void setStock(Map<Producto, Integer> stock) {
+		this.stock = stock;
+	}
+
+	public List<Cliente> getClientes() {
+		return clientes;
+	}
+
+	public void setClientes(List<Cliente> clientes) {
+		this.clientes = clientes;
+	}
+
+	public Set<Venta> getVentas() {
+		return ventas;
+	}
+
+	public void setVentas(Set<Venta> ventas) {
+		this.ventas = ventas;
+	}
+
+	public Set<Vendedor> getVendedores() {
+		return vendedores;
+	}
+	
+	
+	// TODO: Completar el constructor para el correcto funcionamiento del software
+	public void setVendedores(Set<Vendedor> vendedores) {
+		this.vendedores = vendedores;
+	}
+
+	public Tienda(String cuit, String nombre) {
+		this.setClientes(clientes);
+		this.setCuit(cuit);
+		this.setNombre(nombre);
+		this.setStock(stock);
+		this.setVendedores(vendedores);
+		this.setVendibles(vendibles);
+		this.setVentas(ventas);
+		
+
+	}
+
+	
 
 	public Vendible getVendible(Integer codigo) {
 		// TODO: Obtiene un producto o servicio de la coleccion de vendibles utilizando
