@@ -137,7 +137,10 @@ public class Tienda {
 	public void agregarStock(Producto producto, Integer incremento){
 		// TODO: se debe agregar stock a un producto existente
 	}
+	
+	
 
+	
 	public void agregarCliente(Cliente cliente) {
 		clientes.add(cliente);
 	}
@@ -146,6 +149,9 @@ public class Tienda {
 		vendedores.add(vendedor);
 	}
 
+	
+	
+	
 	public void agregarVenta(Venta venta) {
 		// TODO: Agrega una venta a la coleccion correspondiente. En caso de que el
 		// vendedor este de licencia, arroja una
